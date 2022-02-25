@@ -17,4 +17,4 @@ def caesar_cipher(string, factor)
     return string_ord_modified.join('')  
 end
 
-caesar_cipher("What a string!", 3)
+p caesar_cipher("What a string!", 5)
