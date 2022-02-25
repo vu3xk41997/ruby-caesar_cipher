@@ -4,10 +4,10 @@ def caesar_cipher(string, factor)
     split_string.map do |char| 
         if char =~ /[A-Za-z]/
             if char == char.upcase
-                new_char = ((char.ord + 5 - 65) % 26 + 65).chr
+                new_char = ((char.ord + factor - 65) % 26 + 65).chr
                 string_ord_modified.push(new_char)
             else
-                new_char = ((char.ord + 5 - 97) % 26 + 97).chr
+                new_char = ((char.ord + factor - 97) % 26 + 97).chr
                 string_ord_modified.push(new_char)
             end
         else
@@ -17,4 +17,4 @@ def caesar_cipher(string, factor)
     return string_ord_modified.join('')  
 end
 
-caesar_cipher("What a string!", 5)
+caesar_cipher("What a string!", 3)
