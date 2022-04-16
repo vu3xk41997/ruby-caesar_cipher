@@ -1,4 +1,4 @@
-require './lib/caesar_cipher.rb'
+require './lib/caesar_cipher'
 
 describe CaesarCipher do
     describe "#caesar_cipher" do
